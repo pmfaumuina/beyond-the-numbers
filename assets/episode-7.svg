@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Glucose sensor connected to a smart insulin pen and an AI chip, with sparkles">
+  <!-- Episode 7: The future of diabetes care -->
+  <circle cx="120" cy="120" r="96" fill="#fff" opacity=".22"/>
+  <circle cx="120" cy="120" r="70" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="4 8" opacity=".7"/>
+  <!-- connection lines -->
+  <path d="M120 120L60 70M120 120L184 92M120 120L120 192" stroke="#fff" stroke-width="3" stroke-dasharray="2 7" stroke-linecap="round"/>
+  <!-- central AI chip -->
+  <rect x="96" y="96" width="48" height="48" rx="10" fill="#fff" stroke="#3B2A7A" stroke-width="4"/>
+  <path d="M106 90v6M120 90v6M134 90v6M106 144v6M120 144v6M134 144v6M90 106h6M90 120h6M90 134h6M144 106h6M144 120h6M144 134h6" stroke="#3B2A7A" stroke-width="3.5" stroke-linecap="round"/>
+  <polyline points="104,122 112,122 116,112 122,132 128,118 136,122" fill="none" stroke="#7C5CE0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- CGM sensor -->
+  <circle cx="58" cy="68" r="22" fill="#fff" stroke="#3B2A7A" stroke-width="4"/>
+  <circle cx="58" cy="68" r="10" fill="#E9E3FF" stroke="#3B2A7A" stroke-width="3"/>
+  <circle cx="58" cy="68" r="3.5" fill="#FF6B6B"/>
+  <!-- smart insulin pen -->
+  <g transform="rotate(-30 186 92)">
+    <rect x="160" y="82" width="58" height="20" rx="10" fill="#fff" stroke="#3B2A7A" stroke-width="4"/>
+    <rect x="172" y="87" width="16" height="10" rx="3" fill="#7C5CE0"/>
+    <path d="M218 92h10" stroke="#3B2A7A" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <!-- heart drop -->
+  <path d="M120 168s-18 18-18 30a18 18 0 0 0 36 0c0-12-18-30-18-30z" fill="#FF6B6B" stroke="#3B2A7A" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M120 206s-8-5-8-10a4.4 4.4 0 0 1 8-2.4 4.4 4.4 0 0 1 8 2.4c0 5-8 10-8 10z" fill="#fff"/>
+  <!-- sparkles -->
+  <path d="M190 160l3 9 9 3-9 3-3 9-3-9-9-3 9-3z" fill="#fff"/>
+  <path d="M42 150l2 6 6 2-6 2-2 6-2-6-6-2 6-2z" fill="#fff"/>
+</svg>

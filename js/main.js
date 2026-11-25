@@ -125,6 +125,12 @@
     );
   }
 
+  function hostHTML(ep, extraClass) {
+    if (!ep.host) return "";
+    return '<p class="ep-host' + (extraClass ? " " + extraClass : "") + '">' + icon("mic") +
+      "<span>Hosted by <strong>" + escapeHTML(ep.host) + "</strong></span></p>";
+  }
+
   function renderTopics() {
     topicGrid.innerHTML = TOPICS.map(function (t) {
       var ep = EPISODES.filter(function (e) { return e.topic === t.id; })[0];
@@ -161,6 +167,7 @@
           '<div class="ep-body">' +
             '<span class="ep-tag">' + escapeHTML(t.label) + "</span>" +
             '<h3 class="ep-title" id="title-' + ep.id + '" tabindex="-1">' + escapeHTML(ep.title) + "</h3>" +
+            hostHTML(ep) +
             '<p class="ep-desc">' + escapeHTML(ep.description) + "</p>" +
             '<div class="ep-foot">' +
               '<span class="ep-duration">' + icon("clock") + '<span data-duration-id="' + ep.id + '">' + escapeHTML(ep.duration) + "</span></span>" +
@@ -305,7 +312,7 @@
     var t = topicById(ep.topic);
     els.title.textContent = ep.title;
     els.title.title = ep.title;
-    els.ep.textContent = "Episode " + ep.number + " · " + t.label;
+    els.ep.textContent = "Episode " + ep.number + (ep.host ? " · Hosted by " + ep.host : " · " + t.label);
     els.cover.className = "player-cover media " + t.gradient;
     els.cover.innerHTML = mediaSlot(ep.image, t.gradient, t.icon).replace(/^<div[^>]*>|<\/div>$/g, "");
     els.dur.textContent = ep.durationSeconds ? formatTime(ep.durationSeconds) : "—:—";
@@ -586,7 +593,7 @@
       var art = new URL(ep.image, location.href).href;
       navigator.mediaSession.metadata = new MediaMetadata({
         title: ep.title,
-        artist: "The Human Pulse",
+        artist: ep.host ? "Hosted by " + ep.host + " · The Human Pulse" : "The Human Pulse",
         album: "Episode " + ep.number,
         artwork: [{ src: art, sizes: "512x512", type: /\.svg$/i.test(ep.image) ? "image/svg+xml" : "image/jpeg" }]
       });
@@ -694,6 +701,7 @@
       '<div class="modal-content">' +
         '<div class="modal-meta">' +
           '<span class="ep-tag">Episode ' + ep.number + " · " + escapeHTML(t.label) + "</span>" +
+          hostHTML(ep, "modal-host") +
           '<span class="ep-duration">' + icon("clock") + '<span data-duration-id="' + ep.id + '">' +
             (ep.available === false ? "Coming soon" : escapeHTML(ep.duration)) + "</span></span>" +
         "</div>" +

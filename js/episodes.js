@@ -23,13 +23,16 @@ window.TOPICS = [
   { id: "tools",       label: "Tools & Devices",         icon: "sensor", gradient: "grad-sky"   },
   { id: "ai",          label: "Artificial Intelligence", icon: "ai",     gradient: "grad-blue"  },
   { id: "privacy",     label: "Privacy & Data",          icon: "shield", gradient: "grad-coral" },
-  { id: "access",      label: "Access & Equity",         icon: "people", gradient: "grad-mint"  }
+  { id: "access",      label: "Access & Equity",         icon: "people", gradient: "grad-mint"  },
+  { id: "connection",  label: "Human Connection",        icon: "heart",  gradient: "grad-rose"  },
+  { id: "future",      label: "The Future of Care",      icon: "spark",  gradient: "grad-violet" }
 ];
 
 window.EPISODES = [
   {
     id: "episode-1",
     number: 1,
+    host: "Sa Faumuina",
     title: "A Day with Digital Healthcare: How Digital Tools Impact Behavior",
     topic: "daily-life",
     description:
@@ -55,6 +58,7 @@ window.EPISODES = [
   {
     id: "episode-2",
     number: 2,
+    host: "Makayla Johnson",
     title: "Which Tools Actually Help?",
     topic: "tools",
     description:
@@ -80,6 +84,7 @@ window.EPISODES = [
   {
     id: "episode-3",
     number: 3,
+    host: "Kelsey Harper",
     title: "How Is AI Currently Being Used for Diabetes Management?",
     topic: "ai",
     description:
@@ -105,6 +110,7 @@ window.EPISODES = [
   {
     id: "episode-4",
     number: 4,
+    host: "Eliza Pierre",
     title: "Who Sees My Health Data?",
     topic: "privacy",
     description:
@@ -130,6 +136,7 @@ window.EPISODES = [
   {
     id: "episode-5",
     number: 5,
+    host: "Umme Rooman",
     title: "Who Gets Left Out?",
     topic: "access",
     description:
@@ -150,6 +157,58 @@ window.EPISODES = [
     duration: "—:—",
     audio: "audio/episode-5.mp3",
     image: "assets/episode-5.svg",
+    transcript: ""
+  },
+  {
+    id: "episode-6",
+    number: 6,
+    host: "Heather Christensen",
+    title: "Keeping Care Human: Connection in a Digital World",
+    topic: "connection",
+    description:
+      "Telehealth visits, patient portals, and remote monitoring change how patients and care teams connect. How do we keep empathy, trust, and real conversation at the heart of care?",
+    longDescription:
+      "Digital tools can bring care teams closer: a quick portal message, a shared glucose report, or a video visit from home. They can also make care feel distant, rushed, or automated. In this episode we explore how technology is reshaping the relationship between people living with diabetes and the clinicians, educators, and loved ones who support them. We talk about what makes a digital interaction feel caring, how to avoid feeling like 'just a number', and why listening and trust still matter most.",
+    keyQuestions: [
+      "How do telehealth and remote monitoring change the patient–clinician relationship?",
+      "What makes a digital interaction feel caring rather than automated?",
+      "How can families and peer communities use technology to offer support?",
+      "How do we make sure people never feel like 'just a number'?"
+    ],
+    guests: [
+      "Primary care physician",
+      "Certified Diabetes Educator",
+      "Caregiver of a person with diabetes"
+    ],
+    duration: "—:—",
+    audio: "audio/episode-6.mp3",
+    image: "assets/episode-6.svg",
+    transcript: ""
+  },
+  {
+    id: "episode-7",
+    number: 7,
+    host: "Sarah Cote",
+    title: "What Comes Next? The Future of Diabetes Care",
+    topic: "future",
+    description:
+      "Smarter sensors, connected insulin pens, and AI health coaches are on the horizon. We look ahead with hope and caution, and ask what a more human future of diabetes care could look like.",
+    longDescription:
+      "To close the series, we look toward the future. Researchers and companies are working on smarter sensors, connected insulin pens, more automated insulin delivery, and AI tools that coach and personalize care. In this episode we separate realistic near-term changes from long-term possibilities, and we revisit the themes of the whole series: behavior, usefulness, AI, privacy, equity, and human connection. What should patients, clinicians, designers, and policymakers do now so that tomorrow's tools are safe, fair, and genuinely helpful?",
+    keyQuestions: [
+      "Which emerging diabetes technologies are closest to everyday use?",
+      "How might AI coaching and personalization change self-management?",
+      "What safeguards are needed as care becomes more automated?",
+      "What would a truly human-centered future of diabetes care look like?"
+    ],
+    guests: [
+      "Biomedical engineering researcher",
+      "Endocrinologist",
+      "Person living with Type 1 diabetes"
+    ],
+    duration: "—:—",
+    audio: "audio/episode-7.mp3",
+    image: "assets/episode-7.svg",
     transcript: ""
   }
 ];

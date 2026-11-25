@@ -13,6 +13,7 @@ index.html          Page markup (all sections)
 css/styles.css      All styles; colors live at the top as CSS variables
 js/episodes.js      Episode + topic data: the single source of truth
 js/main.js          Player, modal, filters, animations, accessibility toolbar
+js/fx.js            Decorative effects: hero particles, floating medical icons, card glow
 audio/              Put your MP3s here (see audio/README.txt)
 assets/             SVG illustrations, favicon; put photos here too
 ```
@@ -40,6 +41,7 @@ Open `js/episodes.js`. Each episode is one object:
 | Field | What it does |
 |---|---|
 | `title`, `description` | Shown on the card (keep the description to about 2 sentences) |
+| `host` | Shown as "Hosted by …" on the card, popup and player |
 | `longDescription` | Show notes in the "Episode details" popup |
 | `keyQuestions` | Numbered list in the popup |
 | `guests` | "Voices in this episode" chips |
@@ -74,7 +76,6 @@ Edit the variables at the top of `css/styles.css`:
 
 ## Before you submit
 
-- **Team credit:** in `index.html`, search for `[Team Names]`, `[Course Name]`, and `[University]` in the footer.
 - **Testimonials:** the "What Our Listeners Are Saying" quotes are **sample placeholders** and are labeled that way on the page. Replace them with real listener responses (search for `<figure class="slide"` in `index.html`). Once they're real, remove the `[Sample]` prefixes and the yellow "Sample feedback" caption.
 - **Newsletter form:** front-end only. It shows a confirmation but sends and stores nothing.
 
