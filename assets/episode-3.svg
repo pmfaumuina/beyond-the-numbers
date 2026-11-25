@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="An AI chip connected to a predictive glucose curve">
+  <!-- Episode 3: AI in diabetes management -->
+  <circle cx="120" cy="120" r="96" fill="#fff" opacity=".22"/>
+  <!-- network lines -->
+  <g stroke="#fff" stroke-width="3" opacity=".9" stroke-linecap="round">
+    <line x1="120" y1="96" x2="62" y2="56"/>
+    <line x1="120" y1="96" x2="180" y2="50"/>
+    <line x1="96" y1="120" x2="44" y2="128"/>
+    <line x1="144" y1="120" x2="198" y2="112"/>
+  </g>
+  <g fill="#fff" stroke="#0A5C63" stroke-width="3">
+    <circle cx="62" cy="56" r="9"/>
+    <circle cx="180" cy="50" r="9"/>
+    <circle cx="44" cy="128" r="9"/>
+    <circle cx="198" cy="112" r="9"/>
+  </g>
+  <!-- chip -->
+  <g stroke="#0A5C63" stroke-width="4" stroke-linecap="round">
+    <line x1="104" y1="78" x2="104" y2="88"/><line x1="120" y1="78" x2="120" y2="88"/><line x1="136" y1="78" x2="136" y2="88"/>
+    <line x1="104" y1="152" x2="104" y2="162"/><line x1="120" y1="152" x2="120" y2="162"/><line x1="136" y1="152" x2="136" y2="162"/>
+    <line x1="78" y1="104" x2="88" y2="104"/><line x1="78" y1="136" x2="88" y2="136"/>
+    <line x1="152" y1="104" x2="162" y2="104"/><line x1="152" y1="136" x2="162" y2="136"/>
+  </g>
+  <rect x="88" y="88" width="64" height="64" rx="12" fill="#fff" stroke="#0A5C63" stroke-width="4"/>
+  <text x="120" y="129" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="#1F6FB2">AI</text>
+  <!-- predictive curve -->
+  <rect x="36" y="168" width="168" height="48" rx="12" fill="#fff" stroke="#0A5C63" stroke-width="4"/>
+  <polyline points="48,200 70,194 90,198 110,186 128,190" fill="none" stroke="#0E7C86" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="128,190 150,180 170,184 192,176" fill="none" stroke="#FF6B6B" stroke-width="3.5" stroke-dasharray="6 6" stroke-linecap="round"/>
+  <circle cx="128" cy="190" r="4.5" fill="#0E7C86"/>
+</svg>

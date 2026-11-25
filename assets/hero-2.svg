@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" role="img" aria-label="Illustration of a clinician with a stethoscope holding a tablet">
+  <!-- Hero portrait 2: healthcare professional -->
+  <circle cx="120" cy="118" r="92" fill="#fff" opacity=".25"/>
+  <!-- coat -->
+  <path d="M36 300v-52c0-40 36-64 84-64s84 24 84 64v52z" fill="#fff"/>
+  <path d="M120 186v114" stroke="#D4E6EE" stroke-width="3"/>
+  <path d="M100 186l20 34 20-34" fill="#1F6FB2"/>
+  <path d="M84 192l22 50-10 6M156 192l-22 50 10 6" fill="none" stroke="#D4E6EE" stroke-width="4" stroke-linejoin="round"/>
+  <!-- neck + head -->
+  <rect x="106" y="150" width="28" height="34" rx="12" fill="#A86B4C"/>
+  <ellipse cx="120" cy="114" rx="42" ry="48" fill="#A86B4C"/>
+  <!-- hair -->
+  <path d="M76 116c-10-44 16-70 46-70 32 0 52 24 42 70-2-20-12-36-30-40-18 10-40 14-58 40z" fill="#2B1A12"/>
+  <path d="M78 118c-6 26-2 50 8 60l6-46z" fill="#2B1A12"/>
+  <path d="M162 118c6 26 2 50-8 60l-6-46z" fill="#2B1A12"/>
+  <!-- face -->
+  <circle cx="105" cy="118" r="4" fill="#2B1A12"/>
+  <circle cx="135" cy="118" r="4" fill="#2B1A12"/>
+  <path d="M110 136q10 8 20 0" fill="none" stroke="#2B1A12" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- stethoscope -->
+  <path d="M92 186c-6 30 0 52 20 56s26-18 22-34" fill="none" stroke="#0F2A3A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M148 186c6 26 4 40-4 46" fill="none" stroke="#0F2A3A" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="142" cy="238" r="9" fill="#0E7C86" stroke="#0F2A3A" stroke-width="3"/>
+  <!-- tablet -->
+  <rect x="20" y="226" width="62" height="46" rx="8" fill="#0F2A3A"/>
+  <rect x="25" y="231" width="52" height="36" rx="4" fill="#E6F6F4"/>
+  <polyline points="30,256 40,252 46,256 54,244 62,250 72,240" fill="none" stroke="#FF6B6B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- badge -->
+  <rect x="152" y="210" width="34" height="20" rx="4" fill="#E6F6F4" stroke="#0E7C86" stroke-width="2"/>
+  <path d="M162 220h14M169 213v14" stroke="#FF6B6B" stroke-width="3" stroke-linecap="round"/>
+</svg>

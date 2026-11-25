@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="A continuous glucose sensor, an insulin pen and a health app">
+  <!-- Episode 2: Which tools actually help? -->
+  <circle cx="120" cy="120" r="96" fill="#fff" opacity=".35"/>
+  <!-- insulin pen -->
+  <g transform="rotate(-35 120 120)">
+    <rect x="40" y="108" width="150" height="26" rx="13" fill="#fff" stroke="#0A5C63" stroke-width="4"/>
+    <rect x="128" y="108" width="34" height="26" fill="#1F6FB2" opacity=".85"/>
+    <rect x="58" y="114" width="40" height="14" rx="4" fill="#E6F6F4" stroke="#0E7C86" stroke-width="2.5"/>
+    <path d="M190 114h12a6 6 0 0 1 0 12h-12" fill="#fff" stroke="#0A5C63" stroke-width="4"/>
+    <line x1="208" y1="120" x2="222" y2="120" stroke="#0A5C63" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- CGM sensor -->
+  <circle cx="74" cy="170" r="34" fill="#fff" stroke="#0A5C63" stroke-width="4"/>
+  <circle cx="74" cy="170" r="20" fill="#E6F6F4" stroke="#0E7C86" stroke-width="3"/>
+  <circle cx="74" cy="170" r="7" fill="#0E7C86"/>
+  <path d="M46 150a38 38 0 0 1 10-10M102 190a38 38 0 0 1-10 10" fill="none" stroke="#FF6B6B" stroke-width="4" stroke-linecap="round"/>
+  <!-- small phone -->
+  <rect x="154" y="140" width="52" height="84" rx="10" fill="#fff" stroke="#0A5C63" stroke-width="4"/>
+  <text x="180" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0F2A3A">112</text>
+  <path d="M166 196l7-5 7 3 7-8 7 4" fill="none" stroke="#0E7C86" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- wireless waves -->
+  <path d="M118 168a14 14 0 0 1 0 18M128 160a26 26 0 0 1 0 34" fill="none" stroke="#1F6FB2" stroke-width="4" stroke-linecap="round"/>
+</svg>

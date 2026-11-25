@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" role="img" aria-label="Illustration of a person wearing headphones and a glucose sensor, checking a health app">
+  <!-- Hero portrait 1: listener living with diabetes -->
+  <circle cx="120" cy="120" r="92" fill="#fff" opacity=".18"/>
+  <!-- body -->
+  <path d="M40 300v-50c0-40 34-66 80-66s80 26 80 66v50z" fill="#0A5C63"/>
+  <path d="M96 186l24 28 24-28" fill="none" stroke="#E6F6F4" stroke-width="5" stroke-linejoin="round"/>
+  <!-- neck + head -->
+  <rect x="106" y="150" width="28" height="34" rx="12" fill="#F2C4A8"/>
+  <ellipse cx="120" cy="116" rx="44" ry="50" fill="#F2C4A8"/>
+  <!-- hair -->
+  <path d="M74 112c-4-42 24-62 50-62 30 0 52 22 46 62-6-18-20-30-46-34-20 6-38 16-50 34z" fill="#0F2A3A"/>
+  <!-- face -->
+  <circle cx="104" cy="120" r="4" fill="#0F2A3A"/>
+  <circle cx="138" cy="120" r="4" fill="#0F2A3A"/>
+  <path d="M110 140q11 9 22 0" fill="none" stroke="#0F2A3A" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- headphones -->
+  <path d="M70 118a50 54 0 0 1 100 0" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+  <rect x="62" y="108" width="20" height="34" rx="10" fill="#FF6B6B" stroke="#fff" stroke-width="3"/>
+  <rect x="158" y="108" width="20" height="34" rx="10" fill="#FF6B6B" stroke="#fff" stroke-width="3"/>
+  <!-- arm holding phone -->
+  <path d="M168 300v-40c0-14 6-24 16-30l20-12" fill="none" stroke="#0A5C63" stroke-width="26" stroke-linecap="round"/>
+  <circle cx="186" cy="228" r="11" fill="#fff" stroke="#0E7C86" stroke-width="3"/>
+  <circle cx="186" cy="228" r="4" fill="#0E7C86"/>
+  <rect x="190" y="176" width="40" height="66" rx="8" fill="#fff" stroke="#0F2A3A" stroke-width="3"/>
+  <polyline points="196,214 204,208 210,212 216,200 224,206" fill="none" stroke="#0E7C86" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="216" cy="200" r="3" fill="#FF6B6B"/>
+  <circle cx="208" cy="194" r="2" fill="#F2C4A8"/>
+  <ellipse cx="204" cy="224" rx="10" ry="8" fill="#F2C4A8"/>
+</svg>
