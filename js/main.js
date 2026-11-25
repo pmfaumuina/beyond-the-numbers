@@ -1,5 +1,5 @@
 /* =====================================================================
-   THE HUMAN PULSE — SITE SCRIPT
+   BEYOND THE NUMBERS — SITE SCRIPT
    ---------------------------------------------------------------------
    No libraries. Everything is driven by window.EPISODES and
    window.TOPICS from js/episodes.js.
@@ -180,9 +180,48 @@
     }).join("");
   }
 
+  /* Episode source citation (APA style) with a link */
+  function sourceHTML(ep) {
+    var s = ep.source;
+    if (!s) return '<p class="source-cite empty">Source coming soon.</p>';
+    return (
+      '<p class="source-cite">' + escapeHTML(s.authors) + " (" + escapeHTML(s.year) + "). " +
+        escapeHTML(s.title) + (/[?.!]$/.test(s.title) ? " " : ". ") + "<em>" + escapeHTML(s.journal) + "</em>. " +
+        '<a href="' + escapeHTML(s.url) + '" target="_blank" rel="noopener noreferrer">Read the article' +
+        icon("external") + '<span class="sr-only"> (opens in a new tab)</span></a>' +
+      "</p>"
+    );
+  }
+
+  /* Trusted Resources: one easy-to-read card per episode source */
+  function renderSources() {
+    var list = $("#source-list");
+    if (!list) return;
+    list.innerHTML = EPISODES.filter(function (ep) { return ep.source; }).map(function (ep) {
+      var s = ep.source, t = topicById(ep.topic);
+      var lead = s.authors.split(",")[0] + (s.authors.split(",").length > 2 ? " et al." : "");
+      return (
+        "<li>" +
+          '<a class="source-card" href="' + escapeHTML(s.url) + '" target="_blank" rel="noopener noreferrer">' +
+            '<span class="source-ep">Episode ' + ep.number + "</span>" +
+            '<span class="source-body">' +
+              "<strong>" + escapeHTML(s.title) + "</strong>" +
+              "<span>" + escapeHTML(lead) + " (" + escapeHTML(s.year) + ")</span>" +
+              "<em>" + escapeHTML(s.journal) + "</em>" +
+              '<span class="source-topic">' + icon(t.icon) + escapeHTML(t.label) + "</span>" +
+            "</span>" +
+            icon("external", "r-ext") +
+            '<span class="sr-only">(opens in a new tab)</span>' +
+          "</a>" +
+        "</li>"
+      );
+    }).join("");
+  }
+
   renderTopics();
   renderFilters();
   renderEpisodes();
+  renderSources();
 
   /* -------------------------------------------------------------------
      3. AUDIO AVAILABILITY + DURATIONS
@@ -593,7 +632,7 @@
       var art = new URL(ep.image, location.href).href;
       navigator.mediaSession.metadata = new MediaMetadata({
         title: ep.title,
-        artist: ep.host ? "Hosted by " + ep.host + " · The Human Pulse" : "The Human Pulse",
+        artist: ep.host ? "Hosted by " + ep.host + " · Beyond the Numbers" : "Beyond the Numbers",
         album: "Episode " + ep.number,
         artwork: [{ src: art, sizes: "512x512", type: /\.svg$/i.test(ep.image) ? "image/svg+xml" : "image/jpeg" }]
       });
@@ -718,6 +757,7 @@
         "<h3>Voices in this episode</h3><ul class=\"guest-list\">" +
           ep.guests.map(function (g) { return "<li>" + icon("people") + escapeHTML(g) + "</li>"; }).join("") +
         "</ul>" +
+        "<h3>Source</h3>" + sourceHTML(ep) +
         "<h3>Transcript</h3>" +
         '<div class="transcript' + (ep.transcript ? "" : " empty") + '" tabindex="0" aria-label="Transcript">' +
           (ep.transcript ? escapeHTML(ep.transcript) : "Transcript coming soon.") +

@@ -1,5 +1,5 @@
 /* =====================================================================
-   THE HUMAN PULSE — STYLES
+   BEYOND THE NUMBERS — STYLES
    ---------------------------------------------------------------------
    1.  Design tokens (change colors here)
    2.  Base / reset
@@ -1255,7 +1255,40 @@ html.motion-off .hero-visual > * { translate: none; }
   .med-float svg { opacity: .6; }
 }
 
+/* ---------- Trusted Resources: episode sources ---------- */
+.source-list { max-width: 880px; margin: 0 auto; display: grid; gap: 14px; padding: 0; list-style: none; }
+.source-card {
+  position: relative; display: flex; align-items: flex-start; gap: 18px; padding: 20px 22px;
+  border-radius: var(--radius); background: var(--white); text-decoration: none; color: var(--body);
+  border: 1px solid rgba(14, 124, 134, .14); box-shadow: var(--shadow-sm);
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s;
+}
+.source-card:hover { transform: translateY(-3px); box-shadow: var(--glow), var(--shadow); border-color: rgba(34, 211, 238, .45); }
+.source-ep {
+  flex: none; min-width: 92px; text-align: center; padding: 7px 10px; border-radius: 10px;
+  font-family: var(--font-tech); font-weight: 700; font-size: .8rem; letter-spacing: .06em; text-transform: uppercase;
+  color: #E8F4F8; background: linear-gradient(140deg, var(--primary), #3B2A9A);
+}
+.source-body { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 0; font-size: .93rem; line-height: 1.5; }
+.source-body strong { color: var(--ink); font-family: var(--font-head); font-size: 1.05rem; line-height: 1.35; }
+.source-body em { font-style: italic; color: var(--body); }
+.source-topic { display: inline-flex; align-items: center; gap: 6px; margin-top: 4px; font-size: .8rem; font-weight: 600; color: var(--primary-dark); }
+.source-topic svg { width: 16px; height: 16px; }
+.source-card .r-ext { margin-top: 4px; }
+.source-card:hover .r-ext { transform: translate(2px, -2px); color: var(--primary); }
+.source-cite { font-size: .93rem; line-height: 1.6; color: var(--ink); padding-left: 14px; border-left: 3px solid var(--primary); }
+.source-cite a { display: inline-flex; align-items: center; gap: 4px; font-weight: 700; white-space: nowrap; }
+.source-cite a svg { width: 14px; height: 14px; }
+.source-cite.empty { color: var(--body); font-style: italic; }
+@media (max-width: 640px) {
+  .source-card { flex-wrap: wrap; gap: 10px; padding: 18px; }
+  .source-ep { min-width: 0; }
+  .source-body { flex-basis: 100%; order: 2; }
+  .source-card .r-ext { margin-left: auto; }
+}
+
 /* ---------- Accessibility modes ---------- */
+html.a11y-high-contrast .source-card { border: 2px solid var(--ink); }
 html.a11y-high-contrast .navbar, html.a11y-high-contrast .navbar.scrolled { background: #000; }
 html.a11y-high-contrast .hero { background: #000; }
 html.a11y-high-contrast .hero-fx, html.a11y-high-contrast .med-float, html.a11y-high-contrast .section::before { display: none; }

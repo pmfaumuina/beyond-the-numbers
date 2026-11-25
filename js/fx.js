@@ -1,5 +1,5 @@
 /* =====================================================================
-   THE HUMAN PULSE — VISUAL EFFECTS (decorative only)
+   BEYOND THE NUMBERS — VISUAL EFFECTS (decorative only)
    ---------------------------------------------------------------------
    1. Hero "data particles": drifting dots linked by faint lines,
       with a few coral "heartbeat" particles.

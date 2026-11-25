@@ -1,5 +1,5 @@
 /* =====================================================================
-   THE HUMAN PULSE — EPISODE DATA
+   BEYOND THE NUMBERS — EPISODE DATA
    ---------------------------------------------------------------------
    This file is the single source of truth for every episode.
    The episode cards, topic tiles, filter bar, details modal and the
@@ -51,6 +51,13 @@ window.EPISODES = [
       "Health psychologist"
     ],
     duration: "—:—",
+    source: {
+      authors: "Vallis, M., Ryan, H., Berard, L., Cosson, E., Kristensen, F. B., Levrat-Guillen, F., Naiditch, N., Rabasa-Lhoret, R., & Polonsky, W.",
+      year: "2023",
+      title: "How continuous glucose monitoring can motivate self-management: Can motivation follow behaviour?",
+      journal: "Canadian Journal of Diabetes, 47(5), 435–444",
+      url: "https://doi.org/10.1016/j.jcjd.2023.04.001"
+    },
     audio: "audio/episode-1.m4a",
     image: "assets/episode-1.svg",
     transcript: ""
@@ -77,6 +84,13 @@ window.EPISODES = [
       "Person living with Type 2 diabetes"
     ],
     duration: "—:—",
+    source: {
+      authors: "Ebekozien, O., Fantasia, K., Farrokhi, F., Sabharwal, A., & Kerr, D.",
+      year: "2024",
+      title: "Technology and health inequities in diabetes care: How do we widen access to underserved populations and utilize technology to improve outcomes for all?",
+      journal: "Diabetes, Obesity and Metabolism, 26(Suppl. 1), 3–13",
+      url: "https://doi.org/10.1111/dom.15470"
+    },
     audio: "audio/episode-2.mp3",
     image: "assets/episode-2.svg",
     transcript: ""
@@ -103,6 +117,13 @@ window.EPISODES = [
       "Person using an automated insulin delivery system"
     ],
     duration: "—:—",
+    source: {
+      authors: "Guan, Z., Li, H., Liu, R., Cai, C., Liu, Y., Li, J., Wang, X., Huang, S., Wu, L., Liu, D., Yu, S., Wang, Z., Shu, J., Hou, X., Yang, X., Jia, W., & Sheng, B.",
+      year: "2023",
+      title: "Artificial intelligence in diabetes management: Advancements, opportunities, and challenges",
+      journal: "Cell Reports Medicine, 4(10), Article 101213",
+      url: "https://search.lib.asu.edu/permalink/01ASU_INST/1da5cgk/cdi_webofscience_primary_001102136800001"
+    },
     audio: "audio/episode-3.mp3",
     image: "assets/episode-3.svg",
     transcript: ""
@@ -129,6 +150,7 @@ window.EPISODES = [
       "Person living with Type 1 diabetes"
     ],
     duration: "—:—",
+    source: null, // add this episode's source here (same format as the others)
     audio: "audio/episode-4.mp3",
     image: "assets/episode-4.svg",
     transcript: ""
@@ -155,6 +177,13 @@ window.EPISODES = [
       "Older adult managing Type 2 diabetes"
     ],
     duration: "—:—",
+    source: {
+      authors: "Figueroa, C. A., Luo, T., Aguilera, A., & Lyles, C. R.",
+      year: "2021",
+      title: "The need for feminist intersectionality in digital health",
+      journal: "The Lancet Digital Health, 3(8), e526–e533",
+      url: "https://doi.org/10.1016/S2589-7500(21)00118-7"
+    },
     audio: "audio/episode-5.mp3",
     image: "assets/episode-5.svg",
     transcript: ""
@@ -181,6 +210,13 @@ window.EPISODES = [
       "Caregiver of a person with diabetes"
     ],
     duration: "—:—",
+    source: {
+      authors: "Chundamala, P. J.",
+      year: "2026",
+      title: "Connecting through credibility: Health care workers' trust towards health care apps",
+      journal: "Genetics and Molecular Research, 25(8S), Article 40",
+      url: "https://doi.org/10.4238/w95anz40"
+    },
     audio: "audio/episode-6.mp3",
     image: "assets/episode-6.svg",
     transcript: ""
@@ -207,6 +243,13 @@ window.EPISODES = [
       "Person living with Type 1 diabetes"
     ],
     duration: "—:—",
+    source: {
+      authors: "Adnan, A., Irvine, R. E., Williams, A., Harris, M., & Antonacci, G.",
+      year: "2025",
+      title: "Improving acceptability of mHealth apps—The use of the Technology Acceptance Model to assess the acceptability of mHealth apps: Systematic review",
+      journal: "Journal of Medical Internet Research, 27, e66432",
+      url: "https://doi.org/10.2196/66432"
+    },
     audio: "audio/episode-7.mp3",
     image: "assets/episode-7.svg",
     transcript: ""
