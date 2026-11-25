@@ -150,7 +150,13 @@ window.EPISODES = [
       "Person living with Type 1 diabetes"
     ],
     duration: "—:—",
-    source: null, // add this episode's source here (same format as the others)
+    source: {
+      authors: "Lee, Y.-B., Kim, G., Jun, J. E., Park, H., Lee, W. J., Hwang, Y.-C., & Kim, J. H.",
+      year: "2023",
+      title: "An integrated digital health care platform for diabetes management with AI-based dietary management: 48-week results from a randomized controlled trial",
+      journal: "Diabetes Care, 46(5), 959–966",
+      url: "https://doi.org/10.2337/dc22-1929"
+    },
     audio: "audio/episode-4.mp3",
     image: "assets/episode-4.svg",
     transcript: ""
